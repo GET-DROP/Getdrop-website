@@ -1,21 +1,32 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
 a:active {
-    text-decoration: none;
+  text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+  body,
+  .navbar {
+    background-color: #080808 !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+  }
 }

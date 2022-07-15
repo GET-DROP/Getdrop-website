@@ -16,4 +16,18 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body,
+.navbar {
+    background-color: #080808 !important;
+  }
+  h1,
+h2,
+h3,
+p {
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+  }
 }/*# sourceMappingURL=Style.css.map */
