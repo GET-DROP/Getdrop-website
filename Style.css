@@ -21,7 +21,8 @@ a:active {
 @media (prefers-color-scheme: dark) {
   body,
 nav,
-.card {
+.card,
+footer {
     background-color: #080808 !important;
   }
   h1,
