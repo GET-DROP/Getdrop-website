@@ -18,7 +18,8 @@ a:active {
 }
 @media (prefers-color-scheme: dark) {
   body,
-  .navbar {
+  nav,
+  .card {
     background-color: #080808 !important;
   }
 
