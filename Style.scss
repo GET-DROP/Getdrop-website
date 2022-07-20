@@ -82,7 +82,9 @@ a:active {
   nav {
     background-color: rgb(0, 0, 0) !important;
   }
-  footer {
+  footer,
+  .card-body,
+  .card {
     background-color: #181a1b;
   }
   h1,
@@ -92,7 +94,7 @@ a:active {
   h5,
   .navbar-brand,
   p {
-    color: #252829 !important;
+    color: #ffffff !important;
     font-family: "Poppins", sans-serif;
   }
 }
