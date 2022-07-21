@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -12,6 +16,30 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body,
+  nav {
+    background-color: rgb(0, 0, 0) !important;
+  }
+
+  footer {
+    background-color: #181a1b;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .navbar-brand,
+  p {
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+  }
+
 }
 
 .herem {
@@ -40,6 +68,7 @@ a:active {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 #textinfield i {
@@ -74,6 +103,7 @@ a:active {
   position: absolute;
   margin-left: 120px;
   margin-top: 5px;
+
 }
 
 .airdrops:hover {
@@ -86,26 +116,9 @@ a:active {
 
 .rotate {
   transform: rotate(180deg);
+
 }
 
-@media (prefers-color-scheme: dark) {
-  body,
-nav {
-    background-color: rgb(0, 0, 0) !important;
-  }
-  footer,
-.card-body,
-.card {
-    background-color: #181a1b;
-  }
-  h1,
-h2,
-h3,
-h4,
-h5,
-.navbar-brand,
-p {
-    color: #ffffff !important;
-    font-family: "Poppins", sans-serif;
-  }
-}/*# sourceMappingURL=Style.css.map */
+
+
+/*# sourceMappingURL=Style.css.map */
