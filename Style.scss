@@ -1,6 +1,37 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-main{
-    font-size: medium;
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+  body,
+  nav {
+    background-color: rgb(0, 0, 0) !important;
+  }
+  footer {
+    background-color: #181a1b;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .navbar-brand,
+  p {
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+  }
 }

@@ -1,27 +1,661 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <main></main>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"
-  ></script>
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test-getdrop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css" media="screen">
+    body {
+      font-family: verdana;
+      background-color: white;
+      margin: auto;
+      padding: auto;
+    }
+
+    .head {
+      font-variant: small-caps;
+      float: left;
+      font-weight: bold;
+      font-size: 20px;
+      color: silver;
+    }
+
+    .main {
+      text-align: left;
+      background-color: whitesmoke;
+      width: auto;
+      color: black;
+      height: auto;
+    }
+
+    /* from here to heading are for footer*/
+
+    .footer {
+      position: bottom;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #111;
+      height: auto;
+      width: 100vw;
+      padding-top: 20px;
+      color: #fff;
+    }
+
+    .insidefooter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .fthead {
+      font-size: 2.1rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      text-align: center;
+      list-style: 3rem;
+    }
+
+    .ftpara {
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+      color: #cacdd2;
+      text-align: center;
+    }
+
+    .fg {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    .socials {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 3rem 0;
+    }
+
+    .socials a {
+      text-decoration: none;
+      color: #fff;
+      border: 1.1px solid white;
+      padding: 5px;
+      border-radius: 50%;
+    }
+
+    .socials li {
+      margin: 0 10px;
+    }
+
+    .socials a i {
+      font-size: 1.1rem;
+      width: 20px;
+      transition: color.4s ease;
+    }
+
+    .socials a:hover i {
+      color: aqua;
+    }
+
+    .body {
+      background: #fcfcfc;
+      font-family: sans-serif;
+    }
+
+    /*previous background image welcome to getdrop*/
+    .heading {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6uU3HhrMKZ5fWf_NX7xkq3wvsyjIWerlrjQ&usqp=CAU');
+      background-repeat: repeat;
+      width: 1300px;
+      height: 300px;
+      border: 2px solid black;
+      padding: 55px;
+      background-attachment: auto;
+      background-size: contain;
+      color: #fff;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    /*slideshow body*/
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      margin: auto;
+      height: 500px;
+      image-resolution: 1920px 1080px;
+      display: grid;
+      max-width: 1300px;
+      object-fit: contain;
+    }
+
+    /*  text */
+    .text {
+      color: white;
+      font-size: 35px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 250px;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 20px;
+      padding: 8px 12px;
+      position: absolute;
+      text-align: center;
+    }
+
+    .zackdotlol {
+      height: 3px;
+      width: 15px;
+      margin: -450px;
+      margin-left: 530px;
+      margin-top: 450px;
+      background-color: #bbb;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: center;
+      transition: background-color 0.6s ease;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .active {
+      background-color: rgb(181, 3, 3);
+      border-radius: 50%;
+      height: 13px;
+      width: 13px;
+    }
+
+    a#navlinkk:hover {
+      background-color: cornflowerblue;
+      color: white;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 8s;
+    }
+
+    /* defining the fade animation  */
+    @keyframes fade {
+      from {
+        opacity: .6
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* for our phones this decrease text size  */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+
+    .column {
+      float: right;
+      padding: 15px;
+      height: 250px;
+      width: auto;
+      padding-left: 20px;
+      align-items: center;
+
+      /* test003: was testing out boxes with this */
+    }
+
+    .container {
+      display: flex;
+      position: relative;
+      height: auto;
+      width: 2000px;
+      max-width: 100%;
+
+    }
+
+    .tabletext {
+      height: auto;
+    }
+
+    /* the news area styling */
+    .news {
+      background: #12222d;
+      padding: 100px;
+      text-align: center;
+      color: rgb(255, 253, 253);
+    }
+
+    .news .newscontainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+
+    .news .newscontainer .news1 {
+      position: relative;
+      background: #fff;
+      width: 330px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+
+    .news .newscontainer .news1 img {
+      max-width: 300px;
+      max-height: 200px;
+    }
+
+    .news .newscontainer .news1 h2 {
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+    .extra {
+      background: rgb(130, 2, 2);
+      width: 100%;
+      padding-top: 300px;
+      margin-top: -300px;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .extracontent {
+      max-width: 800px;
+    }
+
+    .extra .extraheading {
+      color: #fff;
+    }
+
+    .extra .extratext {
+      color: #fff;
+    }
+
+    .extra .extraimg {
+      max-width: 250px;
+
+    }
+
+    .extra .extraimg img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#181a1b;">
+      <div class="container-fluid">
+        <a class="navbar-brand ml-5 fw-bold " style="color:#fff; font-size:24px;" href="#">GETDROP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="nav justify-content-end" style="color:#c5c0b8;">
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#ffffff;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news" style="color:#ffffff;">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="airdrop page.html" target="_blank" style="color:#ffffff;">Airdrops</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#ffffff;">Sign-up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- slideshow, DONT TOUCH ,still working on it -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://th.bing.com/th/id/R.dbc490957093dbd51cfa4ea68a788668?rik=6mnnrd0UGvFRyg&pid=ImgRaw&r=0"
+        style="width:100%; height:500px;">
+      <div class="text">Welcome to GET-DROP</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img
+        src="https://th.bing.com/th/id/R.3006f758020d5e14bfa7b321d5a91e86?rik=ZMEQS65MjtW9PA&riu=http%3a%2f%2fwww.hdwallpaper.nu%2fwp-content%2fuploads%2f2016%2f12%2fmeteora-14.jpg&ehk=fZfmO8jzwlyQiD%2fFhekBTQWF%2byBmyXPPI6axOVTe2ZM%3d&risl=&pid=ImgRaw&r=0"
+        style="width:100%;height:500px;">
+      <div class="text">Get started</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://images3.alphacoders.com/116/1164314.jpg" style="width:100%;height:500px;">
+      <div class="text">Join our airdrops services program</div>
+    </div>
+    <div style="justify-content: center; position: absolute;">
+      <span class="zackdotlol"></span>
+      <span class="zackdotlol"></span>
+      <span class="zackdotlol"></span>
+    </div>
+  </div>
+  <!--  javascript for slideshow -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("zackdotlol");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 8000);
+    }
+  </script>
+  <!--  main body starts here -->
+  <main class="main">
+
+    <div style="text-align:center;">
+      <h1><i>Get&nbsp;-&nbsp;Drop</i>
+      </h1>
+      <p style="color:rgb(0, 10, 5);"><i>Legit airdrops...</i></p>
+    </div>
+    <div class="container">
+      <div class="tabletext">
+        <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "><b><i>latest airdrops:
+            </i></b></h2>
+        <p> here are this weeks latest paying airdrops confirmed paying</p>
+        <p> here are this weeks latest paying airdrops confirmed paying</p>
+        <p> here are this weeks latest paying airdrops confirmed paying</p>
+        <p> here are this weeks latest paying airdrops confirmed paying</p>
+        <p> here are this weeks latest paying airdrops confirmed paying</p>
+        <p> here are this weeks latest paying airdrops confirmed paying</p>
+      </div>
+      <div class="column" style="background-color:#fff; margin-left: 500px;margin-top: 15px;">
+
+        <h5>Top Airdrops Today</h5>
+        <div class="divider">
+          <hr>
+        </div>
+        <p class="card-text">
+        <p class="mt-4"><a href="" class="link">Tinubu Airdrop</a></p>
+        <p class="mt-4"><a href="" class="link">Buhari Airdrop</a></p>
+        <p class="mt-4"><a href="" class="link">Bepis Airdrop</a></p>
+        </p>
+      </div>
+    </div>
+    </div>
+    </div>
+    <h2> auto generated dummy text below</h2>
+    <p id="tt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odio accusantium perferendis
+      voluptatibus cumque assumenda vitae quae ad aliquid nisi excepturi porro libero asperiores modi in, totam
+      cupiditate quasi. Pariatur praesentium consequuntur eius itaque, debitis aspernatur dolorem. Laborum quod hic
+      tenetur autem saepe. Adipisci totam numquam deleniti,
+      eligendi atque tempore, enim maxime, id asperiores repudiandae in quia mollitia quidem ducimus quisquam
+      necessitatibus impedit inventore aperiam repellat nisi dolorem quasi eum optio! Laboriosam, omnis. Dolore id enim
+      cupiditate officiis laudantium. Repellendus obcaecati corrupti fugit cum reprehenderit voluptates? Molestiae amet
+      fuga omnis tempore nisi pariatur, doloremque tempora dolorum laborum saepe, quam illum nam error dolore quidem,
+      suscipit quo
+      quos nesciunt repellat minima nulla corporis ex alias? Possimus, debitis veniam id eligendi perferendis corrupti
+      sed expedita tempora quod ex, in minus ipsa atque natus! Quidem, debitis. Officiis laborum quibusdam voluptatibus
+      quo provident tempora aliquam eos hic. Blanditiis dolor aperiam quidem error.
+      Velit ea, perspiciatis eaque est quis odit explicabo eos molestiae porro obcaecati soluta unde commodi, dolor
+      asperiores hic libero consectetur voluptatibus voluptas rem dignissimos expedita temporibus quae a. Fugiat est
+      praesentium quisquam sapiente magnam, perferendis in iste possimus! Explicabo dolorem labore ipsam facere, a
+      blanditiis assumenda veniam, dicta, illum qui aspernatur tempora!</p>
+    <div id="tt">
+      <p>
+        <style>
+          #tt {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+        </style>
+      <pre>GET-DROP PROVIDES INFORMATION ABOUT DIFFERENT AIRDROPS,Forex,DeFi and NFT's
+          •GET-DROP IS LOOKING FORWARDING IN ADDING MORE FEATURES LIKE TRADING OF NFT'S,CRYPTO-COINS,e.t.c       
+          Get-Drop Information about Current Airdrops:-
+          
+          •HASHBON ROCKET
+          -Public Chain:-Binance
+          -Airdrop Amount:- 1HASH
+          -Airdrop Total:- 10,000 HASH
+          :- End Date:- 06/30/2022
+          <button class="btn btn-lg btn-primary" onclick="">Run Airdrop</button>
+          
+          • MANUFACTORY:-
+          -Public Chain:-Binance
+          -Airdrop Amount:- 100BUSD
+          -AirDrop Total:- 500BUSD
+          -End Date:- 04/30/2022
+          <button class="btn btn-lg btn-primary" onclick="">Run Airdrop</button>
+          
+          • LANdDao
+          -Public Chain:- ETH
+          -Airdrop Amount: 
+          -Airdrop Total:- 90,000,000 $LAND
+          <button class="btn btn-lg btn-primary" onclick="">Run Airdrop</button>
+          
+          •Saddle Finance
+          -Public Chain:ETH
+          -Airdrop Amount:-150,000,000 SDL
+          -Airdrop Total:- NIL
+          -End Date: NiL
+          <button class="btn btn-lg btn-primary" onclick="">Run Airdrop</button>
+          
+          •Aquarius
+          -Public Chain:-Stellar
+          -Airdrop Amount:- NiL
+          -Airdrop Total:- 15Billion AQUA
+          -End Date:-12/31/2022
+          <button class="btn btn-lg btn-primary" onclick="">Run Airdrop</button>
+          
+          Updates About NFT's
+          
+           
+          Get-Drop Only Gives Legitimate,Tested and Trusted Information about Airdrops</pre>
+      </p>
+    </div>
+  </main>
+  <section id="news" class="news">
+    <h2 class="newsheading">NEWS</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nulla amet tenetur eum! Minima officiis
+      asperiores
+      impedit quasi in sed temporibus corporis veritatis tempora, molestias earum quidem possimus optio vero quod
+      nostrum
+      eum? Natus voluptates animi consequatur! Reiciendis maiores hic iusto, laborum libero atque tempore! Nostrum
+      neque
+      minima aperiam omnis! </p>
+    <div class="newscontainer">
+      <div class="news1">
+        <div>
+          <img src="https://th.bing.com/th?id=OIF.U8QFl1gft7l1ayTx%2flCBaw&w=333&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+          <h2>Text inserted by me</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, quas. Vero beatae earum eligendi, tempore
+            iure tenetur vel commodi ipsam nisi eos molestias dolor animi accusamus! Alias, voluptas optio. Quaerat
+            atque impedit cupiditate iure consectetur.</p>
+        </div>
+      </div>
+      <div class="news1">
+        <div>
+          <img src="https://th.bing.com/th?id=OIF.U8QFl1gft7l1ayTx%2flCBaw&w=333&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+          <h2>this is lorem 25</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, nostrum, impedit laboriosam sed
+            deleniti dolores ipsam non illo quaerat aliquam rem at molestias, soluta molestiae.</p>
+        </div>
+      </div>
+      <div class="news1">
+        <div>
+          <img src="https://th.bing.com/th?id=OIF.U8QFl1gft7l1ayTx%2flCBaw&w=333&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+          <h2>this is lorem 35 :)</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis, eveniet eos asperiores
+            dolor assumenda soluta unde nisi! Aut, molestias distinctio repellat at suscipit optio voluptates expedita
+            et ducimus maxime iure quibusdam explicabo dicta fugit. </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="extra">
+    <div class="extracontent">
+      <h2 class="extraheading"> This is an extra area for new contents</h2>
+      <p class="extratext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti voluptate
+        exercitationem excepturi perspiciatis ullam qui sed eum adipisci veniam, nam rerum ratione blanditiis est
+        officia quia eius veritatis alias unde illum minus aliquid. Blanditiis obcaecati nobis qui sed aspernatur nam,
+        vero laboriosam quibusdam, repudiandae dolorum deserunt? Sapiente, error praesentium.</p>
+    </div>
+    <div class="extraimg">
+      <img src="https://th.bing.com/th?id=OIF.AjvZflh%2fqRnnPXNgphxx%2bA&w=245&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.">
+    </div>
+  </section>
+  <div class="container welcome-div" style="padding-top:800px;">
+    <div class="column">
+      <h4 style="text-decoration:overline;">Hey there! kindly help the developers</h4>
+      <p>Give your feeback below and follow us on our social media page for annoncement on latest update!</p>
+      <p>Please if your feedback hasn't sent do the following
+      <ol>
+        <li>1.Check your Router.</li>
+        <li>Reset date and time</li>
+        <li>Contact support</li>
+      </ol>
+      </p>
+      <div class="col-md-6 text-center">
+        <button class="btn btn-lg btn-primary" onclick="Developerremark()">Developer remarks</button> <button
+          class="btn btn-lg  btn-success" onclick="givef()">Give feedback</button>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <!--  responsive javascript buttons and more later -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script>
+
+  <script type="text/javascript">
+    function givef() {
+      swal("what do you think?", {
+        buttons: {
+          cancel: true,
+          catch: {
+            text: 'Good',
+            value: "catch",
+          },
+          Terrible: true,
+          Comment: true,
+        },
+      })
+        .then((value) => {
+          switch (value) {
+            case "Comment":
+              swal("write comment here", {
+                content: "input",
+              })
+                .then((value) => {
+                  swal('Your comment is much appreciated:)');
+                });
+              break;
+
+
+            case "catch":
+              swal("THANKS SO MUCH!", "successfully sent to dwales", "success");
+              break;
+
+            case "Terrible":
+              swal("are you sure?", {
+                icon: 'warning',
+                dangerMode: true,
+                buttons: {
+                  yes: true
+                },
+              });
+              break;
+          }
+        });
+    }
+    function Developerremark() {
+      alert('so far it has been fun guys, i hope to do more amazing stuffs :)');
+
+    }
+  </script><br>
+
+  <!--  beginning of footer codes, the syling is above in head -->
+  <footer>
+    <div class="footer">
+      <div class="insidefooter">
+        <div class="fthead">
+          <h3>GET-DROP</h3>
+
+        </div>
+        <div class="ftpara">
+
+          <p>get drop is a website built from hardship and perseverance to achieve the ultimate result.
+            we are dedicated to bring to you an outstanding range of services and will continue to further update our
+            work
+            This website is for finding legitimate airdrops that are actually paying and have real worth and value.</p>
+        </div>
+        <ul class="socials">
+          <li><a href="https://www.discord.com"><i class="fa fa-phone"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </html>
