@@ -221,9 +221,42 @@
     }
 
     /* for our phones this decrease text size  */
-    @media only screen and (max-width: 300px) {
+    @media only screen and (max-width: 400px) {
       .text {
-        font-size: 11px
+        font-size: 21px;
+        position: absolute;
+        top: 50%;
+      }
+
+      .zackdots {
+        position: absolute;
+        top: 92%;
+        left: 43%;
+      }
+
+      .zackdotlol {
+        margin: 2px;
+      }
+
+      .active {
+        border-radius: 0%;
+        height: 3px;
+      }
+
+      .numbertext {
+        display: none;
+      }
+
+      .mySlides.fade {
+        max-height: 300px;
+      }
+
+      .mySlides.fade img {
+        max-height: 300px;
+      }
+
+      .slideshow-container {
+        max-height: 300px;
       }
     }
 
@@ -249,15 +282,35 @@
 
     }
 
+    @media only screen and (max-width: 600px) {
+      .column {
+        text-align: center;
+        font-size: 11px;
+        width: 50%;
+        max-height: auto;
+        left: 20%;
+      }
+
+      .card-text {
+        padding: 0%;
+
+      }
+
+      .link {
+        color: rgb(181, 3, 3);
+        text-decoration: none;
+
+      }
+
+    }
+
     .container {
       display: flex;
-      position: relative;
       height: auto;
       width: auto;
       max-width: 80%;
-
-
     }
+
 
     .maintext {
       text-align: center;
@@ -342,6 +395,45 @@
 
     .extra .extraimg img {
       max-width: 100%;
+    }
+
+    @media only screen and (max-width:600px) {
+      .news1 {
+        position: relative;
+        right: 45%;
+
+      }
+
+      .extra {
+        display: inline-table;
+      }
+    }
+
+    .extra2 {
+      height: 500px;
+      padding: 70px;
+    }
+
+    /* .extra2column{
+     font-family: ;
+    }*/
+    .extra2buttons {
+      display: flex;
+      justify-content: space-between, 50px;
+      align-items: center;
+    }
+    .btn.btn-lg.btn.ptimary{
+        padding:5rem 1rem;
+        font-size:12rem ;
+        border-radius:10rem ;
+        margin-right: 20px;
+        }
+    @media only screen and(max-width:600px) {
+      .btn.btn-lg.btn.ptimary{
+        padding:.5rem 1rem;
+        font-size:1.25rem ;
+        border-radius:.3rem ;
+      }
     }
   </style>
 </head>
@@ -896,21 +988,23 @@
       </svg>
     </div>
   </section>
-  <div class="container welcome-div" style="padding-top:800px;">
-    <div class="column">
-      <h4 style="text-decoration:overline;">Hey there! kindly help the developers</h4>
-      <p>Give your feeback below and follow us on our social media page for annoncement on latest update!</p>
-      <p>Please if your feedback hasn't sent do the following
-      <ol>
-        <li>Check your Router.</li>
-        <li>Reset date and time</li>
-        <li>Contact support</li>
-      </ol>
-      </p>
-      <div class="col-md-6 text-center">
-        <button class="btn btn-lg btn-primary" onclick="Developerremark()">Developer remarks</button> <button
-          class="btn btn-lg  btn-success" onclick="givef()">Give feedback</button>
+  <div class="extra2">
+    <div class="extra2column">
+      <h4 class="extra2head">Hey there! kindly help the developers</h4>
+      <div class="extra2text">
+        <p>Give your feeback below and follow us on our social media page for annoncement on latest update!</p>
+        <p>Please if your feedback hasn't sent do the following
+        <ol>
+          <li>Check your Router.</li>
+          <li>Reset date and time</li>
+          <li>Contact support</li>
+        </ol>
+        </p>
       </div>
+    </div>
+    <div class="extra2buttons">
+      <button class="btn btn-lg btn-primary" onclick="Developerremark()">Developer remarks</button>
+      <button class="btn btn-lg  btn-success" onclick="givef()">Give feedback</button>
     </div>
   </div>
   </main>
