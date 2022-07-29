@@ -24,6 +24,77 @@
       color: silver;
     }
 
+    /* nav bar */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      transition: 0.6s;
+      z-index: 10000;
+      
+    }
+
+    header.sticky {
+      padding: 5px 100px;
+      background-color: #1f2223;
+    }
+
+     .headbox {
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+
+    .logo {
+      position: relative;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      right:25%;
+      margin-top: 2px;
+      transition: 0.6s;
+    }
+
+    header ul {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 20%;
+      margin-bottom: 50px;
+      margin-top: 3%;
+    }
+
+    header ul li {
+      position: relative;
+      list-style: none;
+    }
+
+    header ul li a {
+      position: relative;
+      margin: 0px 15px;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: 500px;
+      transition: 0.6s;
+    }
+    .active2{
+     padding: 5px;
+      color: #111;
+      border-radius: 15px;
+      background-color: #fff;
+    }
+    .active2:hover{
+      color: rgb(181, 3, 3);
+    }
 
     /* from here to heading are for footer*/
 
@@ -107,7 +178,7 @@
     }
 
     /*previous background image welcome to getdrop*/
-    .heading {
+    /*.heading {
       background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6uU3HhrMKZ5fWf_NX7xkq3wvsyjIWerlrjQ&usqp=CAU');
       background-repeat: repeat;
       width: 1300px;
@@ -115,11 +186,11 @@
       border: 2px solid black;
       padding: 55px;
       background-attachment: auto;
-      background-size: contain;
+      background-size: cover;
       color: #fff;
       text-align: center;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
+    } */
 
     /*slideshow body*/
     * {
@@ -139,12 +210,32 @@
     }
 
     /* Slideshow container */
+    .headtext {
+      position: relative;
+      width: auto;
+      height: auto;
+      padding-bottom: 8%;
+      background-color: #1f2223;
+    }
+
+    .firsttext {
+      padding-top: 3%;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 1.5px;
+      font-style: bold;
+      color: #fff;
+      padding-top: 12%;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
     .slideshow-container {
       position: relative;
       margin: auto;
       height: 500px;
       image-resolution: 1920px 1080px;
-      max-width: 1300px;
+      max-width: auto;
     }
 
     /*  text */
@@ -160,11 +251,12 @@
 
     /* Number text (1/3 etc) */
     .numbertext {
-      color: #f2f2f2;
+      /*color: #f2f2f2;
       font-size: 20px;
       padding: 8px 12px;
       position: absolute;
-      text-align: center;
+      text-align: center;*/
+      display: none;
     }
 
     .zackdots {
@@ -220,7 +312,7 @@
       }
     }
 
-    /* for our phones this decrease text size  */
+    /* for our phones, this decreases the sizes  */
     @media only screen and (max-width: 400px) {
       .text {
         font-size: 21px;
@@ -281,7 +373,7 @@
       text-align: left;
 
     }
-
+/* airdrop teble list for phone*/
     @media only screen and (max-width: 600px) {
       .column {
         text-align: center;
@@ -301,17 +393,13 @@
         text-decoration: none;
 
       }
-
     }
-
     .container {
       display: flex;
       height: auto;
       width: auto;
       max-width: 80%;
     }
-
-
     .maintext {
       text-align: center;
       padding-top: 8%;
@@ -319,9 +407,16 @@
 
 
     /* 2nd main text styling */
+    #tthead {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      padding-left: 12%;
+    }
+
     #tt {
       font-size: 20px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      padding-left: 12%;
+      padding-right: 15%;
     }
 
     /* the news area styling */
@@ -422,75 +517,80 @@
       justify-content: space-between, 50px;
       align-items: center;
     }
-    .btn.btn-lg.btn.ptimary{
-        padding:5rem 1rem;
-        font-size:12rem ;
-        border-radius:10rem ;
-        margin-right: 20px;
-        }
+
+    .btn.btn-lg.btn.ptimary {
+      padding: 5rem 1rem;
+      font-size: 12rem;
+      border-radius: 10rem;
+      margin-right: 20px;
+    }
+
     @media only screen and(max-width:600px) {
-      .btn.btn-lg.btn.ptimary{
-        padding:.5rem 1rem;
-        font-size:1.25rem ;
-        border-radius:.3rem ;
+      .btn.btn-lg.btn.ptimary {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: .3rem;
       }
     }
   </style>
 </head>
-
-<body>
+<!-- nav bar begins from here-->
+<nav>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#181a1b;">
-      <div class="container-fluid">
-        <a class="navbar-brand ml-5 fw-bold " style="color:#fff; font-size:24px;" href="#">GETDROP</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="nav justify-content-end" style="color:#c5c0b8;">
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#ffffff;">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#news" style="color:#ffffff;">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Airdrops.html" target="_blank" style="color:#ffffff;">Airdrops</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#ffffff;">Sign-up</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="headbox">
+      <a href="#" class="logo">GD</a>
+      <ul>
+        <li><a class="active2" href="#">HOME</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">AIRDROPS</a></li>
+        <li><a href="#">SIGN-UP</a></li>
+      </ul>
+    </div>
   </header>
-  <!-- slideshow, DONT TOUCH ,still working on it -->
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="https://th.bing.com/th/id/R.dbc490957093dbd51cfa4ea68a788668?rik=6mnnrd0UGvFRyg&pid=ImgRaw&r=0"
-        style="width:100%; height:500px;">
-      <div class="text">Welcome to GET-DROP</div>
+</nav>
+<!-- script for nav bar..a bit unnecessary since the bgcolors are pratically the same,
+   but just flexing javascript lol-->
+<script type="text/javascript">
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  })
+</script>
+<body>
+  <!-- slideshow begins from here, still working on it -->
+  <div class="headtext">
+    <div class="firsttext">
+      <h1 style="font-size: 55px;"><i>Get&nbsp;-&nbsp;Drop</i>
+      </h1>
+      <p style="text-transform:none;"><i>Legit Airdrops...</i></p>
     </div>
+    <div class="slideshow-container">
 
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img
-        src="https://th.bing.com/th/id/R.3006f758020d5e14bfa7b321d5a91e86?rik=ZMEQS65MjtW9PA&riu=http%3a%2f%2fwww.hdwallpaper.nu%2fwp-content%2fuploads%2f2016%2f12%2fmeteora-14.jpg&ehk=fZfmO8jzwlyQiD%2fFhekBTQWF%2byBmyXPPI6axOVTe2ZM%3d&risl=&pid=ImgRaw&r=0"
-        style="width:100%;height:500px;">
-      <div class="text">Get started</div>
-    </div>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://th.bing.com/th/id/R.dbc490957093dbd51cfa4ea68a788668?rik=6mnnrd0UGvFRyg&pid=ImgRaw&r=0"
+          style="width:100%; height:500px;">
+        <div class="text">Welcome to GET-DROP</div>
+      </div>
 
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="https://images3.alphacoders.com/116/1164314.jpg" style="width:100%;height:500px;">
-      <div class="text">Join our airdrops services program</div>
-    </div>
-    <div class="zackdots">
-      <span class="zackdotlol"></span>
-      <span class="zackdotlol"></span>
-      <span class="zackdotlol"></span>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://th.bing.com/th/id/R.3006f758020d5e14bfa7b321d5a91e86?rik=ZMEQS65MjtW9PA&riu=http%3a%2f%2fwww.hdwallpaper.nu%2fwp-content%2fuploads%2f2016%2f12%2fmeteora-14.jpg&ehk=fZfmO8jzwlyQiD%2fFhekBTQWF%2byBmyXPPI6axOVTe2ZM%3d&risl=&pid=ImgRaw&r=0"
+          style="width:100%;height:500px;">
+        <div class="text">Get started</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://images3.alphacoders.com/116/1164314.jpg" style="width:100%;height:500px;">
+        <div class="text">Join our airdrops services program</div>
+      </div>
+      <div class="zackdots">
+        <span class="zackdotlol"></span>
+        <span class="zackdotlol"></span>
+        <span class="zackdotlol"></span>
+      </div>
     </div>
   </div>
   <!--  javascript for slideshow -->
@@ -517,11 +617,8 @@
   </script>
   <!--  main body starts here -->
   <main class="main">
-
     <div class="maintext">
-      <h1><i>Get&nbsp;-&nbsp;Drop</i>
-      </h1>
-      <p style="color:rgb(0, 10, 5);"><i>Legit airdrops...</i></p>
+      <!-- this is the 1st text below slideshow container, i deleted the text that was here-->
     </div>
 
     <div class="container">
@@ -673,7 +770,7 @@
     </div>
     </div>
 
-    <h2 class="mt-5"> main text area</h2>
+    <h2 id="tthead"> main text area</h2>
     <p id="tt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odio accusantium perferendis
       voluptatibus cumque assumenda vitae quae ad aliquid nisi excepturi porro libero asperiores modi in, totam
       cupiditate quasi. Pariatur praesentium consequuntur eius itaque, debitis aspernatur dolorem. Laborum quod hic
