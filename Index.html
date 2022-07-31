@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <style type="text/css" media="screen">
     body {
@@ -221,6 +222,8 @@
     img {
       vertical-align: middle;
       max-height: 32vw;
+      max-width: 95%;
+      border-radius: 15px;
     }
 
     /* Slideshow container */
@@ -257,8 +260,8 @@
       margin: auto;
       max-height: 30vw;
       image-resolution: 1920px 1080px;
-      max-width: 95%;
-      left: 73%
+      max-width: auto;
+      left: 75%;
     }
 
     /*  text */
@@ -283,21 +286,29 @@
       text-align: left;
       line-height: 28px;
     }
-    .text-lines:first-child{
+
+    .text-lines:first-child {
       animation: slideup;
-      animation-duration: 16s;
-      animation-delay: 8s;
+      animation-duration: 24s;
+      animation-delay: 0s;
       animation-iteration-count: infinite;
     }
-    @keyframes slideup{
-      0%{
+
+    @keyframes slideup {
+      0% {
         margin-top: 0;
       }
-      50%{
-        margin-top: -185px;
+
+      33.3% {
+        margin-top: -130px;
       }
-      100%{
-        margin-top:-370px ;
+
+      66.6% {
+        margin-top: -310px;
+      }
+
+      100% {
+        margin-top: -500px;
       }
     }
 
@@ -315,7 +326,7 @@
     .text-buttons:hover {
       color: #080091;
       transition: 0.6s;
-      
+
     }
 
     /* Number text (1/3 etc) */
@@ -643,12 +654,13 @@
       <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="https://th.bing.com/th/id/R.dbc490957093dbd51cfa4ea68a788668?rik=6mnnrd0UGvFRyg&pid=ImgRaw&r=0"
+          <img class=".img"
+            src="https://th.bing.com/th/id/R.dbc490957093dbd51cfa4ea68a788668?rik=6mnnrd0UGvFRyg&pid=ImgRaw&r=0"
             style="width:100%; height:500px;">
         </div>
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img
+          <img class=".img"
             src="https://th.bing.com/th/id/R.3006f758020d5e14bfa7b321d5a91e86?rik=ZMEQS65MjtW9PA&riu=http%3a%2f%2fwww.hdwallpaper.nu%2fwp-content%2fuploads%2f2016%2f12%2fmeteora-14.jpg&ehk=fZfmO8jzwlyQiD%2fFhekBTQWF%2byBmyXPPI6axOVTe2ZM%3d&risl=&pid=ImgRaw&r=0"
             style="width:100%;height:500px;">
         </div>
@@ -663,6 +675,13 @@
         </div>
       </div>
       <div class="text">
+        <div class="text-lines">
+          <p><br />
+            <br />
+            <br />
+            <br />
+          </p>
+        </div>
         <div class="text-lines">
           <h3>Get started</h3>
           <p>Redirect to the airdrop page now and find an airdrop<br>
@@ -864,6 +883,7 @@
       </div>
     </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <h2 id="tthead"> main text area</h2>
     <p id="tt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odio accusantium perferendis
