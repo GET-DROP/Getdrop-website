@@ -29,7 +29,7 @@
     header {
       position: fixed;
       top: 0;
-      width: 100%;
+      width: 100vw;
       transition: 0.6s;
       z-index: 10000;
 
@@ -38,9 +38,32 @@
     header.sticky {
       padding: 5px 100px;
       height: 14vh;
+      width: 100vw;
       background-color: #1f2223;
     }
+    @media only screen and (max-width: 600px) {
+      header.sticky{
+        height: 8vh;
+        width: 100vw;
+        padding: auto
+        ;
+      }
 
+      header ul{
+        font-size: 12px;
+        margin-right:50%;
+        width: auto;
+      }
+      .logo{
+        left:20vw ;
+        font-weight: 20;
+      }
+      header ul li a{
+              width:100%;
+              height: 10%;
+              overflow: hidden;
+      }
+    }
     .headbox {
       position: relative;
       top: 0;
@@ -219,66 +242,71 @@
       display: none;
     }
 
-    img {
+    .img {
       vertical-align: middle;
-      max-height: 32vw;
-      max-width: 95%;
-      border-radius: 15px;
+      height: auto;
+      max-width: 100%;
+      border-radius: 5px;
+      animation: myzoomout;
+     animation-iteration-count: infinite;
+     animation-duration: 3s;
     }
+@keyframes myzoomout {
+  from{
+width: 10%;
+  }
+  to{
 
+    width: 100%;
+  }
+}
     /* Slideshow container */
     .headtext {
       position: relative;
       width: auto;
       height: auto;
-      padding-bottom: 8%;
+      padding-bottom: 10%;
       background-color: #1f2223;
     }
 
     .firsttext {
-      padding-top: 3%;
+      padding-top: 13%;
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: 1.5px;
       font-style: bold;
       color: #fff;
-      padding-top: 12%;
+      padding-bottom: 5%;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }
 
     .text-motion {
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: right;
+      position: relative;
       max-width: auto;
-
     }
 
     .slideshow-container {
       position: relative;
       margin: auto;
-      max-height: 30vw;
+      max-height: 100%;
       image-resolution: 1920px 1080px;
       max-width: auto;
-      left: 75%;
-    }
 
+}
     /*  text */
     .text {
       color:
-        /*#1f2223*/
         #fff;
-      background-color: #1f2223;
+      background-color: transparent;
       font-size: 1.4vw;
       position: absolute;
-      bottom: 0;
       width: 43%;
-      height: 13.5vw;
-      margin-bottom: 200px;
+      height: 170px;
+      margin-bottom: 120px;
       padding-left: 5%;
       overflow: hidden;
-
+      bottom: 0%;
     }
 
     .text-lines {
@@ -348,7 +376,7 @@
       text-align: center;
       position: absolute;
       display: inline-block;
-      top: 380px;
+      top: 480px;
       left: 46%;
     }
 
