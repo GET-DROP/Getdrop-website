@@ -1,0 +1,94 @@
+@import url(./materialize.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300&display=swap');
+
+.themecolor1 {
+    background-color: #1f2223;
+    padding-bottom: 10%;
+}
+
+div.nav-wrapper.themecolor1 {
+    padding-bottom: 5%;
+}
+
+.themecolor2 {
+    color: rgb(181, 3, 3);
+}
+
+.themecolor3 {
+    background-color: rgb(181, 3, 3);
+}
+
+h2.themecolor2 {
+    text-transform: uppercase;
+}
+
+.themefont {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 250;
+    letter-spacing: 2;
+}
+
+h1.themefont {
+    margin-top: 20vh;
+    font-weight: 700;
+    font-size: 8rem;;
+}
+
+a.brand-logo {
+    margin-right: 6vw;
+}
+
+div.nav-wrapper {
+    max-height: 10vh;
+}
+
+.themebutton {
+    margin-top: 5vh;
+    border-radius: 5px;
+}
+
+button.hoverable:hover {
+    width: 8.5vw;
+    height: 6vh;
+    transition: 0.5s;
+}
+
+#headbox {
+    width: 100%;
+    margin: 0%;
+    max-width: 100%;
+    box-shadow: none;
+
+}
+
+.containerpadding {
+    padding-top: 10vh;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#slideimages {
+    display: flex;
+    position: relative;
+}
+
+#slidecontainer {
+    min-height: 500px;
+}
+
+.card-image {
+    max-width: 30vw !important;
+}
+
+#caption {
+    position: absolute;
+    top: 20vh;
+    text-align: left;
+    line-height: 2vh;
+    margin-left: 14px;
+
+}
+
+.sidenav {}
