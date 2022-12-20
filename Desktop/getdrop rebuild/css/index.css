@@ -31,7 +31,8 @@ h2.themecolor2 {
 h1.themefont {
     margin-top: 20vh;
     font-weight: 700;
-    font-size: 8rem;;
+    font-size: 8rem;
+    ;
 }
 
 a.brand-logo {
@@ -63,10 +64,10 @@ button.hoverable:hover {
 
 .containerpadding {
     padding-top: 10vh;
-    padding-left: 0%;
-    padding-right: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #slideimages {
