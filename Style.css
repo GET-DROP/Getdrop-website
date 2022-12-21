@@ -119,6 +119,80 @@ a:active {
 
 }
 
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 5%;
+  color: #fff;
+}
+
+.insidefooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fthead {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  list-style: 3rem;
+}
+
+.ftpara {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+  text-align: center;
+}
+
+.fg {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color.4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
 
 
 /*# sourceMappingURL=Style.css.map */
