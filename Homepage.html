@@ -1,0 +1,785 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetDrop-Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="headbox" class="container themecolor1">
+        <nav>
+            <div class="header">
+                <div class="nav-wrapper themefont themecolor1 ">
+                    <a href="" class="brand-logo right">GETDROP</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                            class="material-icons">menu</i></a>
+                    <ul class=" left hide-on-med-and-down">
+                        <li><a class="hoverable " href="#">AIRDROPS</a></li>
+                        <li><a class="hoverable" href="#">NEWS</a></li>
+                        <li><a class="hoverable" href="#">LOGIN</a></li>
+                    </ul>
+                </div>
+                <ul class="sidenav themefont" id="mobile-demo">
+                    <li><a href="#" class="">HOME</a></li>
+                    <li><a href="#">AIRDROPS</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a href="#" class="btn themebutton themecolor3 waves-effect">Create An Account</a></li>
+                    <li>
+                        <p class="center-align grey-text lighten-2">Already Got An Account?</p>
+                    </li>
+                    <li><a href="#" class="btn waves-effect themebutton blue dark">login</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- 1st text animation -->
+        <div class="textandlogo fade ">
+            <h1 class="center-align white-text themefont">GETDROP<i class="material-icons themecolor2">add_location</i>
+            </h1>
+        </div>
+
+        <!-- automated slider -->
+        <div class="carousel carousel-slider" id="slidecontainer">
+            <a href="#one!" id="slideimage" class="carousel-item">
+                <img alt="img1" id="slideimage" src="https://picsum.photos/1240/400">
+                <div class="caption center-align" id="caption">
+                    <h2 class="flow-text themecolor2">This is our big Website!</h3>
+                        <div class="divider"></div>
+                        <p class="light white-text flow-text">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptates, culpa ratione!</p><br>
+                        <button class="btn blue darken-2 themebutton hoverable">airdrops</button>
+                </div>
+            </a>
+            <a href="#two!" id="slideimage" class="carousel-item">
+                <img alt="img2" src="https://picsum.photos/1250/400">
+                <div class="caption left-align" id="caption">
+                    <h2 class="flow-text themecolor2">cool Caption right lad?</h3>
+                        <div class="divider"></div>
+                        <p class="light white-text flow-text">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptates, culpa ratione!</p><br>
+                        <button class="btn blue darken-2 themebutton hoverable">airdrops</button>
+                </div>
+            </a>
+            <a href="#three!" id="slideimage" class="carousel-item">
+                <img alt="img4" src="https://picsum.photos/1220/400">
+                <div id="caption" class=" caption right-align">
+                    <h2 class="flow-text themecolor2">Awesome photo ain't it?</h3>
+                        <div class="divider"></div>
+                        <p class="light grey-text text-lighten-3 flow-text">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptates, culpa ratione!</p><br>
+                        <button class="btn blue darken-2 themebutton hoverable">airdrops</button>
+                </div>
+            </a>
+            <a href="#one!" id="slideimage" class="carousel-item">
+                <img alt="img5" src="https://picsum.photos/1240/400">
+                <div class="caption center-align" id="caption">
+                    <h2 class="flow-text themecolor2">This is our next image!</h3>
+                        <div class="divider"></div>
+                        <p class="light grey-text text-lighten-3 flow-text">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptates, culpa ratione!</p><br>
+                        <button class="btn blue darken-2 themebutton hoverable">airdrops</button>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- text before cards-->
+
+    <div class="container center-align">
+        <h1 class="center-align"> Top Airdrops This Week!</h1>
+        <div class="divider themecolor3"></div>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ducimus modi hic soluta quod cum incidunt
+            ipsam dolores alias nam officia neque molestias voluptatem. Veniam quasi quia neque dolores reiciendis?</p>
+    </div>
+
+    <!-- cards -->
+    <div class="row">
+        <div class="col s8 m4">
+            <div class="card white hoverable">
+                <div class="card-content whitetext center-align">
+                    <div class="card-image">
+                        <img alt="card 1" src="https://picsum.photos/440/250">
+                        <span class="card-title">Enclosed airdrop</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat quidem porro</p>
+                    <a href="" class="waves-effect waves-light btn blue darken-2 themebutton">Run airdrop</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s8 m4">
+            <div class="card white hoverable">
+                <div class="card-content whitetext center-align">
+                    <div class="card-image">
+                        <img alt="card 2" src="https://picsum.photos/440/250">
+                    </div>
+                    <span class="card-title">Mobile airdrop</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat quidem porro
+                        voluptatum ullam accusamus minima, laboriosam facere, ratione totam eveniet atque doloribus! Rem
+                        tenetur ex harum sequi beatae?</p>
+                    <a href="" class="waves-effect waves-light btn blue darken-2 themebutton">Run airdrop</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s8 m4">
+            <div class="card white hoverable">
+                <div class="card-content whitetext center-align">
+                    <div class="card-image">
+                        <img alt="card 3" src="https://picsum.photos/440/250">
+                        <span class="card-title">Twitter airdrop</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat quidem porro
+                        voluptatum ullam accusamus minima, laboriosam facere, ratione totam eveniet atque doloribus! Rem
+                        tenetur ex harum sequi beatae?</p>
+                    <a href="" class="waves-effect waves-light btn blue darken-2 themebutton">Run airdrop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s8 m4">
+            <div class="card white hoverable">
+                <div class="card-content whitetext center-align">
+                    <div class="card-image">
+                        <img alt="card 4" src="https://picsum.photos/430/250">
+                        <span class="card-title">Mobile airdrop</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat quidem porro
+                        voluptatum ullam accusamus minima, laboriosam facere, ratione totam eveniet atque doloribus!
+                        Rem
+                        tenetur ex harum sequi beatae?</p>
+                    <a href="" class="waves-effect waves-light btn center blue darken-2 themebutton">Run airdrop</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s8 m4">
+            <div class="card hoverable white">
+                <div class="card-content whitetext center-align">
+                    <div class="card-image">
+                        <img alt="card 5" src="https://picsum.photos/430/250">
+                        <span class="card-title">Zack airdrop</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat quidem porro
+                        voluptatum ullam accusamus minima, laboriosam facere, ratione totam eveniet atque doloribus!
+                        Rem
+                        tenetur ex harum sequi beatae?</p>
+                    <a href="" class="waves-effect waves-light btn center blue darken-2 themebutton">Run airdrop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- text-area-->
+    <div class="divider"></div>
+    <div class="container">
+
+        <h2>Whats an airdrop?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum exercitationem, necessitatibus
+            repellendus
+            soluta atque similique inventore molestias rerum beatae odio sit ea tenetur saepe alias consequuntur
+            aspernatur officiis quia reprehenderit esse neque eum ad, ab fugiat quisquam? Molestias inventore porro
+            ipsam maiores adipisci voluptatem expedita sed iure, exercitationem consequuntur velit, natus rem
+            nostrum
+            unde recusandae dolorem? Architecto, perferendis adipisci. Accusamus sequi sit laudantium labore
+            consequuntur doloribus sint magni voluptas, facilis placeat facere nulla, delectus excepturi quis est
+            sapiente aliquid impedit suscipit, iste necessitatibus iure quia natus commodi veritatis. Exercitationem
+            qui
+            quae porro, ratione consequuntur a iusto commodi optio recusandae, incidunt eaque autem deleniti facere,
+            modi distinctio! Minima veritatis quis praesentium optio ad veniam iure nemo fugit voluptatum cumque
+            expedita nulla eum, ipsum eius quaerat ullam neque ipsa voluptatem recusandae odio quasi amet earum!
+            Dolores
+            veniam earum doloremque aliquam minus recusandae nisi numquam provident, deleniti fuga eveniet,
+            corporis,
+            necessitatibus sed blanditiis labore quibusdam porro aliquid. Unde quidem incidunt ipsam ipsa, delectus
+            eos
+            cumque consectetur sint quam. Magnam illo delectus magni reiciendis. Vel eum optio nam dolor commodi
+            magni
+            quos? Pariatur doloribus ullam aliquam molestiae fuga cum sunt, possimus amet ea, quod maiores itaque
+            excepturi ad ipsa natus voluptates unde praesentium ut!</p>
+        <h2>How Getdrop Works</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto velit consequuntur necessitatibus
+            assumenda enim, at distinctio harum. At autem in labore itaque quas aliquid, consectetur facilis,
+            dignissimos cumque quae ipsa iure perferendis. Totam officia consectetur dolorum dignissimos repudiandae
+            adipisci facilis, porro voluptate animi earum tenetur beatae suscipit tempore pariatur! Rem, inventore
+            nihil
+            laudantium dolorem, ad nesciunt enim ducimus eveniet perspiciatis nam quos aperiam dolor molestias,
+            laboriosam aut! Aspernatur illo repudiandae, minima quasi labore iste facilis tempora odio voluptas quam
+            recusandae corrupti rerum velit temporibus similique? Nesciunt totam cupiditate id facilis sunt, quod
+            obcaecati culpa rem at, labore quia sint voluptatem, excepturi dolorum natus ullam quidem modi. Sint
+            modi
+            voluptatibus veniam perspiciatis, vitae adipisci rerum voluptas blanditiis. Ea deserunt quae deleniti
+            voluptas commodi, sit possimus eligendi. Magnam facere porro eligendi dolorum ducimus vel, soluta nihil
+            facilis autem earum veritatis repellat est tempore. Blanditiis possimus nisi voluptates veniam, tenetur
+            aut
+            earum sit repellendus, quod mollitia necessitatibus repellat ipsa illo nostrum consequatur, animi iusto
+            illum eaque ipsam odio. Culpa, inventore voluptatem possimus accusamus aperiam labore nesciunt alias
+            tempora
+            unde provident? Consequuntur voluptatibus animi nesciunt ut odit exercitationem, veniam molestiae
+            maiores
+            laborum incidunt, ducimus possimus. Unde fuga, ipsa accusantium nostrum beatae quasi labore ad nisi,
+            vero a
+            recusandae laboriosam nam, dolorem voluptatibus est doloribus vitae veritatis deserunt harum dolores!
+            Cupiditate voluptas aperiam quos odit rem aliquid, dolore perferendis dignissimos. Commodi id, harum, a
+            exercitationem nesciunt quidem debitis est sit impedit libero mollitia fugiat aut possimus porro
+            voluptates
+            incidunt ex assumenda? Sequi, repellendus. Optio similique recusandae aliquid deleniti doloremque illum
+            quas, quia nisi impedit iste expedita quis earum, corporis non quasi possimus maxime quos fugit laborum.
+            Ducimus autem culpa veniam tempora aperiam velit earum non. Porro, nostrum nihil facere eos similique
+            ad.
+            Debitis aliquam totam est dolorum blanditiis, possimus quidem officiis reprehenderit, vitae expedita ex
+            soluta fugit sed saepe maiores ratione. Quidem consectetur autem sit ratione aperiam placeat voluptate
+            iusto? Sed, odit iste quidem laudantium iure laborum incidunt ut delectus perspiciatis fugiat earum est
+            ex,
+            dolores quibusdam consequatur fuga possimus maxime enim veritatis commodi aut! Ex sequi necessitatibus
+            alias
+            officia optio temporibus, quae tempore. Incidunt id non provident debitis error. Ut nemo iusto alias
+            similique, nobis quas illo, adipisci ipsum laboriosam eos praesentium in incidunt perspiciatis
+            doloremque
+            velit laborum. Quisquam illo ad sequi fuga ipsum omnis officiis dolore laudantium distinctio, quasi
+            tempore,
+            amet doloremque expedita temporibus perspiciatis consectetur hic recusandae voluptate vitae doloribus
+            itaque
+            ullam repellat quo in. Iste voluptatum voluptates corrupti error. Sapiente ducimus nulla veritatis alias
+            assumenda, recusandae natus fuga sunt ea, laboriosam cumque. Molestiae aliquam inventore quaerat at,
+            sequi
+            illo quam dolorum molestias ipsum quisquam quos labore a quo voluptatem ut commodi amet fugit officia
+            rem
+            asperiores possimus quas eveniet. Nulla magni autem laboriosam nobis placeat? Sequi veritatis veniam
+            rerum
+            dolorem commodi recusandae dolor similique aliquid provident odit atque eveniet ex porro optio tenetur
+            quasi
+            in quos facilis debitis, fuga, numquam natus? Doloremque culpa reprehenderit, perferendis ipsam, nostrum
+            repellat debitis, consectetur assumenda tempora sunt dolore delectus iusto consequuntur magni?
+            Voluptatum,
+            odio aliquid.
+        </p>
+    </div>
+    <div class="container themecolor1" id="headbox">
+        <div class="white-text center" style="padding-top:10vh ;">
+            <h3>News</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum optio ipsam vitae pariatur ad
+                tenetur minus commodi corrupti, tempora provident facere animi, facilis perferendis temporibus neque
+                nostrum praesentium perspiciatis? Ipsum, magnam aliquam? Amet, illo. Eos et nisi qui, vitae dicta
+                ducimus, ab dolore alias adipisci nobis accusantium aliquid non.</p>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card center-align heightandoverflow">
+                    <span>
+                        <h2><a href="#">Get-Drop Team To Launch App!!</a></h2>
+                    </span>
+                    <div class="">
+                        <img src="https://picsum.photos/600/310" alt="news1" srcset="">
+                    </div>
+                    <div class="card-content">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat
+                            quidem porro
+                            voluptatum ullam accusamus minima, laboriosam facere Lorem ipsum dolor, sit amet
+                            consectetur
+                            adipisicing elit. Velit sequi nulla iure blanditiis, molestias veritatis vero cumque?
+                            Alias
+                            molestias expedita nostrum? Possimus aspernatur corrupti, facere, animi excepturi saepe
+                            ad
+                            tempora reprehenderit quidem aliquam porro obcaecati amet, mollitia quod ullam
+                            provident.
+                            Sed est ipsa reiciendis praesentium amet placeat atque. Eaque quis, nihil vel, suscipit
+                            excepturi placeat voluptates architecto laudantium ipsa id et saepe, magnam at laborum
+                            quasi
+                            perspiciatis natus quas iusto dolores maiores quaerat sunt magni! Aut alias quae
+                            asperiores
+                            cupiditate qui! Vel ad libero laudantium eum est at laboriosam accusamus eos cupiditate
+                            a
+                            dolores consequuntur asperiores rem porro, maiores reprehenderit laborum vero, in,
+                            corrupti
+                            fuga! Ipsum non cum perferendis nemo, ratione aspernatur suscipit explicabo beatae.
+                            Doloremque quibusdam quis nulla accusantium, corporis odit quaerat sit vitae totam
+                            culpa,
+                            voluptatibus, magnam omnis eos repellat iusto iure expedita eveniet praesentium alias.
+                            Sed
+                            fuga alias modi, animi minus amet? Similique deleniti voluptatem nemo dolores ea
+                            voluptates
+                            hic molestias? At et praesentium odio fugiat! Totam accusantium rerum consequuntur,
+                            ullam
+                            voluptatum quo ratione itaque natus dignissimos velit aspernatur incidunt illo,
+                            laboriosam
+                            earum, labore assumenda eos doloremque impedit libero vitae ipsam dolorum. Repellendus
+                            quibusdam tempora, voluptatum inventore hic id suscipit provident eligendi nobis at
+                            officiis
+                            culpa accusantium.</p>
+                        <a href="" class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">forward</i>Login to join
+                            the discussion</a><a href=""
+                            class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">edit</i>Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card center-align heightandoverflow">
+                    <span>
+                        <h2><a href="#">NFT's Section TBA</a></h2>
+                    </span>
+                    <div class="">
+                        <img src="https://picsum.photos/600/300" alt="news1" srcset="">
+                    </div>
+                    <div class="card-content">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat
+                            quidem porro
+                            voluptatum ullam accusamus minima, laboriosam facere Lorem ipsum dolor, sit amet
+                            consectetur
+                            adipisicing elit. Velit sequi nulla iure blanditiis, molestias veritatis vero cumque?
+                            Alias
+                            molestias expedita nostrum? Possimus aspernatur corrupti, facere, animi excepturi saepe
+                            ad
+                            tempora reprehenderit quidem aliquam porro obcaecati amet, mollitia quod ullam
+                            provident.
+                            Sed est ipsa reiciendis praesentium amet placeat atque. Eaque quis, nihil vel, suscipit
+                            excepturi placeat voluptates architecto laudantium ipsa id et saepe, magnam at laborum
+                            quasi
+                            perspiciatis natus quas iusto dolores maiores quaerat sunt magni! Aut alias quae
+                            asperiores
+                            cupiditate qui! Vel ad libero laudantium eum est at laboriosam accusamus eos cupiditate
+                            a
+                            dolores consequuntur asperiores rem porro, maiores reprehenderit laborum vero, in,
+                            corrupti
+                            fuga! Ipsum non cum perferendis nemo, ratione aspernatur suscipit explicabo beatae.
+                            Doloremque quibusdam quis nulla accusantium, corporis odit quaerat sit vitae totam
+                            culpa,
+                            voluptatibus, magnam omnis eos repellat iusto iure expedita eveniet praesentium alias.
+                            Sed
+                            fuga alias modi, animi minus amet? Similique deleniti voluptatem nemo dolores ea
+                            voluptates
+                            hic molestias? At et praesentium odio fugiat! Totam accusantium rerum consequuntur,
+                            ullam
+                            voluptatum quo ratione itaque natus dignissimos velit aspernatur incidunt illo,
+                            laboriosam
+                            earum, labore assumenda eos doloremque impedit libero vitae ipsam dolorum. Repellendus
+                            quibusdam tempora, voluptatum inventore hic id suscipit provident eligendi nobis at
+                            officiis
+                            culpa accusantium.</p>
+                        <a href="" class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">forward</i>Login to join
+                            the discussion</a><a href=""
+                            class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">edit</i>Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card center-align heightandoverflow">
+                    <span>
+                        <h2><a href="">Members Cash Out Big From Yankie-Airdrop</a></h2>
+                    </span>
+                    <div class="">
+                        <img src="https://picsum.photos/600/300" alt="news2" srcset="">
+                    </div>
+                    <div class="card-content">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat
+                            quidem porro
+                            voluptatum ullam accusamus minima, laboriosam facere Lorem ipsum dolor, sit amet
+                            consectetur
+                            adipisicing elit. Velit sequi nulla iure blanditiis, molestias veritatis vero cumque?
+                            Alias
+                            molestias expedita nostrum? Possimus aspernatur corrupti, facere, animi excepturi saepe
+                            ad
+                            tempora reprehenderit quidem aliquam porro obcaecati amet, mollitia quod ullam
+                            provident.
+                            Sed est ipsa reiciendis praesentium amet placeat atque. Eaque quis, nihil vel, suscipit
+                            excepturi placeat voluptates architecto laudantium ipsa id et saepe, magnam at laborum
+                            quasi
+                            perspiciatis natus quas iusto dolores maiores quaerat sunt magni! Aut alias quae
+                            asperiores
+                            cupiditate qui! Vel ad libero laudantium eum est at laboriosam accusamus eos cupiditate
+                            a
+                            dolores consequuntur asperiores rem porro, maiores reprehenderit laborum vero, in,
+                            corrupti
+                            fuga! Ipsum non cum perferendis nemo, ratione aspernatur suscipit explicabo beatae.
+                            Doloremque quibusdam quis nulla accusantium, corporis odit quaerat sit vitae totam
+                            culpa,
+                            voluptatibus, magnam omnis eos repellat iusto iure expedita eveniet praesentium alias.
+                            Sed
+                            fuga alias modi, animi minus amet? Similique deleniti voluptatem nemo dolores ea
+                            voluptates
+                            hic molestias? At et praesentium odio fugiat! Totam accusantium rerum consequuntur,
+                            ullam
+                            voluptatum quo ratione itaque natus dignissimos velit aspernatur incidunt illo,
+                            laboriosam
+                            earum, labore assumenda eos doloremque impedit libero vitae ipsam dolorum. Repellendus
+                            quibusdam tempora, voluptatum inventore hic id suscipit provident eligendi nobis at
+                            officiis
+                            culpa accusantium.</p>
+                        <a href="" class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">forward</i>Login to join
+                            the discussion</a><a href=""
+                            class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">edit</i>Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card heightandoverflow">
+                    <span>
+                        <h2>What Is a Premium User?</h2>
+                    </span>
+                    <div class="">
+                        <img src="https://picsum.photos/1300/412" alt="news3" srcset="">
+                    </div>
+                    <div class="card-content">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat
+                            quidem porro
+                            voluptatum ullam accusamus minima, laboriosam facere Lorem ipsum dolor, sit amet
+                            consectetur
+                            adipisicing elit. Velit sequi nulla iure blanditiis, molestias veritatis vero cumque?
+                            Alias
+                            molestias expedita nostrum? Possimus aspernatur corrupti, facere, animi excepturi saepe
+                            ad
+                            tempora reprehenderit quidem aliquam porro obcaecati amet, mollitia quod ullam
+                            provident.
+                            Sed est ipsa reiciendis praesentium amet placeat atque. Eaque quis, nihil vel, suscipit
+                            excepturi placeat voluptates architecto laudantium ipsa id et saepe, magnam at laborum
+                            quasi
+                            perspiciatis natus quas iusto dolores maiores quaerat sunt magni! Aut alias quae
+                            asperiores
+                            cupiditate qui! Vel ad libero laudantium eum est at laboriosam accusamus eos cupiditate
+                            a
+                            dolores consequuntur asperiores rem porro, maiores reprehenderit laborum vero, in,
+                            corrupti
+                            fuga! Ipsum non cum perferendis nemo, ratione aspernatur suscipit explicabo beatae.
+                            Doloremque quibusdam quis nulla accusantium, corporis odit quaerat sit vitae totam
+                            culpa,
+                            voluptatibus, magnam omnis eos repellat iusto iure expedita eveniet praesentium alias.
+                            Sed
+                            fuga alias modi, animi minus amet? Similique deleniti voluptatem nemo dolores ea
+                            voluptates
+                            hic molestias? At et praesentium odio fugiat! Totam accusantium rerum consequuntur,
+                            ullam
+                            voluptatum quo ratione itaque natus dignissimos velit aspernatur incidunt illo,
+                            laboriosam
+                            earum, labore assumenda eos doloremque impedit libero vitae ipsam dolorum. Repellendus
+                            quibusdam tempora, voluptatum inventore hic id suscipit provident eligendi nobis at
+                            officiis
+                            culpa accusantium.</p>
+                        <a href="" class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">forward</i>Login to join
+                            the discussion</a><a href=""
+                            class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">edit</i>Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card center-align heightandoverflow">
+                    <span>
+                        <h2><a href="#">PREMIUM USERS CAN NOW INVITE</a></h2>
+                    </span>
+                    <div class="">
+                        <img src="https://picsum.photos/1300/415" alt="news4" srcset="">
+                    </div>
+                    <div class="card-content">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat
+                            quidem porro
+                            voluptatum ullam accusamus minima, laboriosam facere Lorem ipsum dolor, sit amet
+                            consectetur
+                            adipisicing elit. Velit sequi nulla iure blanditiis, molestias veritatis vero cumque?
+                            Alias
+                            molestias expedita nostrum? Possimus aspernatur corrupti, facere, animi excepturi saepe
+                            ad
+                            tempora reprehenderit quidem aliquam porro obcaecati amet, mollitia quod ullam
+                            provident.
+                            Sed est ipsa reiciendis praesentium amet placeat atque. Eaque quis, nihil vel, suscipit
+                            excepturi placeat voluptates architecto laudantium ipsa id et saepe, magnam at laborum
+                            quasi
+                            perspiciatis natus quas iusto dolores maiores quaerat sunt magni! Aut alias quae
+                            asperiores
+                            cupiditate qui! Vel ad libero laudantium eum est at laboriosam accusamus eos cupiditate
+                            a
+                            dolores consequuntur asperiores rem porro, maiores reprehenderit laborum vero, in,
+                            corrupti
+                            fuga! Ipsum non cum perferendis nemo, ratione aspernatur suscipit explicabo beatae.
+                            Doloremque quibusdam quis nulla accusantium, corporis odit quaerat sit vitae totam
+                            culpa,
+                            voluptatibus, magnam omnis eos repellat iusto iure expedita eveniet praesentium alias.
+                            Sed
+                            fuga alias modi, animi minus amet? Similique deleniti voluptatem nemo dolores ea
+                            voluptates
+                            hic molestias? At et praesentium odio fugiat! Totam accusantium rerum consequuntur,
+                            ullam
+                            voluptatum quo ratione itaque natus dignissimos velit aspernatur incidunt illo,
+                            laboriosam
+                            earum, labore assumenda eos doloremque impedit libero vitae ipsam dolorum. Repellendus
+                            quibusdam tempora, voluptatum inventore hic id suscipit provident eligendi nobis at
+                            officiis
+                            culpa accusantium.</p>
+                        <a href="" class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">forward</i>Login to join
+                            the discussion</a><a href=""
+                            class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">edit</i>Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card heightandoverflow">
+                    <span>
+                        <h2><a href=""> Airdrop Rolling out Payments</a></h2>
+                    </span>
+                    <div class="">
+                        <img src="https://picsum.photos/1300/405" alt="news5" srcset="">
+                    </div>
+                    <div class="card-content">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat
+                            quidem porro
+                            voluptatum ullam accusamus minima, laboriosam facere Lorem ipsum dolor, sit amet
+                            consectetur
+                            adipisicing elit. Velit sequi nulla iure blanditiis, molestias veritatis vero cumque?
+                            Alias
+                            molestias expedita nostrum? Possimus aspernatur corrupti, facere, animi excepturi saepe
+                            ad
+                            tempora reprehenderit quidem aliquam porro obcaecati amet, mollitia quod ullam
+                            provident.
+                            Sed est ipsa reiciendis praesentium amet placeat atque. Eaque quis, nihil vel, suscipit
+                            excepturi placeat voluptates architecto laudantium ipsa id et saepe, magnam at laborum
+                            quasi
+                            perspiciatis natus quas iusto dolores maiores quaerat sunt magni! Aut alias quae
+                            asperiores
+                            cupiditate qui! Vel ad libero laudantium eum est at laboriosam accusamus eos cupiditate
+                            a
+                            dolores consequuntur asperiores rem porro, maiores reprehenderit laborum vero, in,
+                            corrupti
+                            fuga! Ipsum non cum perferendis nemo, ratione aspernatur suscipit explicabo beatae.
+                            Doloremque quibusdam quis nulla accusantium, corporis odit quaerat sit vitae totam
+                            culpa,
+                            voluptatibus, magnam omnis eos repellat iusto iure expedita eveniet praesentium alias.
+                            Sed
+                            fuga alias modi, animi minus amet? Similique deleniti voluptatem nemo dolores ea
+                            voluptates
+                            hic molestias? At et praesentium odio fugiat! Totam accusantium rerum consequuntur,
+                            ullam
+                            voluptatum quo ratione itaque natus dignissimos velit aspernatur incidunt illo,
+                            laboriosam
+                            earum, labore assumenda eos doloremque impedit libero vitae ipsam dolorum. Repellendus
+                            quibusdam tempora, voluptatum inventore hic id suscipit provident eligendi nobis at
+                            officiis
+                            culpa accusantium.</p>
+                        <a href="" class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">forward</i>Login to join
+                            the discussion</a><a href=""
+                            class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">edit</i>Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card heightandoverflow">
+                    <span>
+                        <h2><a href="#">Github To Launch Airdrop</a></h2>
+                    </span>
+                    <div class="card-content">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, corrupti placeat
+                            quidem porro Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dolorem
+                            voluptatum iusto laudantium in. Vero, sed? Neque placeat, facere quae ducimus veritatis,
+                            corporis veniam repellat quam maxime aspernatur, odit nulla dolores officia. Quia
+                            consectetur quibusdam quis inventore? Blanditiis, nostrum soluta! Consequatur aliquam,
+                            quam
+                            tenetur eligendi officia ullam natus unde mollitia culpa, quod quidem porro? Rem
+                            aspernatur
+                            cumque vero! Quam tenetur atque praesentium, consequatur doloremque distinctio,
+                            reiciendis
+                            accusantium vero unde, ipsum facere recusandae neque consectetur quas libero qui. Nam,
+                            magni? Doloribus, sit officia. Nemo reiciendis, delectus explicabo excepturi mollitia
+                            facere
+                            nisi cumque voluptatum incidunt hic vero dolores ratione aperiam asperiores ullam
+                            ducimus
+                            eveniet, atque perferendis voluptates eligendi doloremque? Aperiam enim atque
+                            perspiciatis!
+                            Dolores voluptate voluptatum nam alias minima harum consectetur inventore magni quasi
+                            tempore natus velit sit temporibus labore neque facilis, ipsam laborum, sed sint
+                            eligendi ea
+                            eaque commodi deleniti! Id nulla eos voluptatem dolores quasi error impedit sint,
+                            commodi ab
+                            repellendus vero consectetur quibusdam est earum quidem enim, et accusantium praesentium
+                            unde cupiditate facilis assumenda nisi voluptas? Vero, repellendus? Doloribus recusandae
+                            hic
+                            labore debitis asperiores cupiditate natus a quam. Error, nobis accusamus? Minima
+                            mollitia
+                            quia, in earum quam natus illum minus, similique tempore tempora, et delectus. Ipsum
+                            fuga
+                            dolorum asperiores.
+                            voluptatum ullam accusamus minima, laboriosam facere Lorem ipsum dolor, sit amet
+                            consectetur
+                            adipisicing elit. Velit sequi nulla iure blanditiis, molestias veritatis vero cumque?
+                            Alias
+                            molestias expedita nostrum? Possimus aspernatur corrupti, facere, animi excepturi saepe
+                            ad
+                            tempora reprehenderit quidem aliquam porro obcaecati amet, mollitia quod ullam
+                            provident.
+                            Sed est ipsa reiciendis praesentium amet placeat atque. Eaque quis, nihil vel, suscipit
+                            excepturi placeat voluptates architecto laudantium ipsa id et saepe, magnam at laborum
+                            quasi
+                            perspiciatis natus quas iusto dolores maiores quaerat sunt magni! Aut alias quae
+                            asperiores
+                            cupiditate qui! Vel ad libero laudantium eum est at laboriosam accusamus eos cupiditate
+                            a
+                            dolores consequuntur asperiores rem porro, maiores reprehenderit laborum vero, in,
+                            corrupti
+                            fuga! Ipsum non cum perferendis nemo, ratione aspernatur suscipit explicabo beatae.
+                            Doloremque quibusdam quis nulla accusantium, corporis odit quaerat sit vitae totam
+                            culpa,
+                            voluptatibus, magnam omnis eos repellat iusto iure expedita eveniet praesentium alias.
+                            Sed
+                            fuga alias modi, animi minus amet? Similique deleniti voluptatem nemo dolores ea
+                            voluptates
+                            hic molestias? At et praesentium odio fugiat! Totam accusantium rerum consequuntur,
+                            ullam
+                            voluptatum quo ratione itaque natus dignissimos velit aspernatur incidunt illo,
+                            laboriosam
+                            earum, labore assumenda eos doloremque impedit libero vitae ipsam dolorum. Repellendus
+                            quibusdam tempora, voluptatum inventore hic id suscipit provident eligendi nobis at
+                            officiis
+                            culpa accusantium.</p>
+                        <a href="" class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">forward</i>Login to join
+                            the discussion</a><a href=""
+                            class="waves-effect waves-light btn themebutton blue darken-2"><i
+                                class="material-icons">edit</i>Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- text and photos containers -->
+    <div class="container themecolor3 valign-wrapper" id="headbox">
+         <div><img class="circle" src="https://picsum.photos/600/300" alt="extra's img"></div>
+           <div class="extratext"> <h2>Want Some Help?</h2>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ullam quis nobis fugit ipsa. Quasi
+                laboriosam aliquam dignissimos aliquid sit error, fugit corporis mollitia possimus, blanditiis nulla!
+                Animi, ipsum! Praesentium ipsum sint facilis, iusto totam eligendi eveniet assumenda consectetur ab hic
+                est dignissimos, ipsam soluta voluptates culpa, autem modi esse. Magnam asperiores quis doloribus itaque
+                fugit! Quibusdam quis tempore aliquid dolores ut architecto ipsam quasi veniam a. Recusandae laudantium
+                eligendi sapiente neque veniam! Quisquam, cumque! Beatae accusamus consequuntur dolores maiores rem,
+                cupiditate, adipisci aspernatur praesentium exercitationem esse amet quidem? Optio consectetur numquam
+                dicta explicabo culpa? Nulla sequi corporis dolores dolorum veniam necessitatibus commodi beatae non!
+                Vero blanditiis itaque nihil ea voluptates nesciunt tempora deleniti at nobis quod ducimus eveniet
+                reiciendis, libero recusandae architecto numquam quia ratione illum distinctio! Vitae ad, at suscipit
+                reiciendis, est quas iure sint odit rerum laborum possimus impedit facere ea id exercitationem quaerat
+                dicta deserunt nulla provident error aliquid. Rem nulla aut ipsam tenetur dolores error architecto
+                facere ab. Corrupti recusandae, sequi expedita unde earum itaque ratione vitae dignissimos error omnis
+                harum debitis iste aspernatur quod veniam perferendis reprehenderit! Consequuntur asperiores
+                dignissimos, illum repudiandae libero perferendis cum unde accusantium inventore rerum nisi eaque alias
+                deserunt. Reiciendis.</p></div>
+        </div>
+    </div>
+    <!-- extras -->
+    <div class="container " style="margin-bottom: 500px;">
+        <h2>About Getdrop</h2>
+        <p>GET-DROP PROVIDES INFORMATION ABOUT DIFFERENT AIRDROPS,Forex,DeFi and NFT's •GET-DROP IS LOOKING FORWARDING
+            IN ADDING MORE FEATURES LIKE TRADING OF NFT'S,CRYPTO-COINS,e.t.c <br />
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cum esse iste at quae quidem, aut saepe itaque odio assumenda soluta voluptatem quaerat
+            unde nihil, atque laborum! A harum, labore qui cumque eum distinctio corporis dignissimos hic. Explicabo,
+            architecto vero nihil libero ea aperiam. Repudiandae dicta doloribus, qui similique nemo doloremque ex
+            ipsum, laborum corporis tempora sed, magni eius quidem ratione aperiam earum quo! Et, perferendis doloribus,
+            assumenda rem quos provident delectus ullam officiis repudiandae dolores vel reprehenderit corporis nulla
+            tempora suscipit sed? Animi amet ducimus iste corrupti eum, sint, commodi officiis assumenda reiciendis
+            quisquam praesentium odit est, quaerat saepe sunt quidem repudiandae. Expedita voluptatum quisquam
+            dignissimos maxime quo, inventore et iure, officiis ex sequi modi rerum nobis amet neque ut ducimus earum
+            tempora perferendis, eum officia voluptas at? Facere consectetur non necessitatibus sequi, veniam ipsum
+            dolor sed vero error totam ullam ea neque, quibusdam numquam! Inventore incidunt voluptatum ipsam earum
+            corrupti, dicta laborum? Aliquid, optio laborum. Ipsam magnam quos illum consequatur possimus facere
+            adipisci necessitatibus voluptatem quo natus dolore, quam commodi numquam inventore maiores obcaecati! Ut,
+            qui sint? Qui vel doloremque aliquam aspernatur quod ratione provident distinctio? Sit fugit natus,
+            accusantium labore qui culpa, nulla reiciendis tenetur rerum aperiam ab.</p>
+        <h2>Our Aim</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, aperiam ducimus! Culpa explicabo deserunt
+            laudantium animi placeat facere, ex voluptas maiores nulla unde? Maiores, aliquid assumenda. Laboriosam
+            perferendis labore saepe, ab numquam porro aliquid eaque quo autem totam perspiciatis maiores, dignissimos
+            quia. Deserunt architecto fugit minima quos sunt aliquam maiores laborum culpa maxime totam eos doloremque
+            ad vero repellat saepe ipsum velit natus labore quisquam reiciendis perspiciatis nam id, eveniet illo. Eum
+            ipsam, harum itaque quas animi, rerum maiores tempore provident natus culpa dolorem! Molestias suscipit
+            debitis sed dolorem laborum culpa obcaecati recusandae nihil, quia amet corporis id quas minima officiis
+            quis vel beatae? Ipsa, reprehenderit eos cupiditate voluptatibus labore et est. Officia esse enim quam?
+            Doloribus illum, cumque consectetur iste voluptate eos voluptas modi repudiandae, rem officia reprehenderit
+            vel aperiam ut quos obcaecati provident molestiae perspiciatis doloremque odit nulla! Dolore, laudantium.
+            Tempore obcaecati exercitationem ex eligendi saepe soluta doloribus omnis, numquam eveniet error eum
+            praesentium quibusdam aut cumque reiciendis natus. Veritatis commodi similique suscipit eius, neque sint
+            dolorem expedita laudantium culpa fuga aspernatur itaque sunt explicabo vero ea iusto doloremque esse qui
+            aliquid exercitationem. Adipisci dolor repellat voluptas fuga autem a est eius ipsam amet reprehenderit.
+            Nam, quia! Adipisci eum a eius explicabo harum atque voluptate veniam, ducimus culpa eaque obcaecati, quo
+            minima rem? At illum, nisi sint beatae, architecto vitae ab adipisci vel sed aut ut sapiente nostrum tenetur
+            neque totam quo blanditiis corrupti quae aperiam temporibus porro. Dignissimos explicabo labore quas, itaque
+            dolores omnis voluptates optio praesentium repellendus voluptatem enim iure dolor! Facilis necessitatibus
+            incidunt suscipit iste ipsam sit adipisci nemo dolorem. Accusantium ullam omnis numquam, rerum voluptate vel
+            voluptatibus magni nihil explicabo quaerat est sed incidunt illo voluptates asperiores eligendi suscipit
+            libero error. Ut voluptatibus quas, deleniti laboriosam expedita adipisci nulla labore dolorum, deserunt
+            sapiente perferendis?</p>
+    </div>
+    <!-- footer-->
+
+    <footer class="page-footer themecolor1">
+        <div class="container ">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Getdrop</h5>
+                    <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                        expedita quam ipsam rerum cupiditate incidunt natus eos architecto deleniti voluptatibus id at
+                        excepturi eligendi ullam, assumenda minima aliquam laudantium dicta!</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                <h1></h1>© GET-DROP All rights reserved</h1>
+            </div>
+        </div>
+    </footer>
+    <script>
+        //init sidenav
+        M.Sidenav.init(document.querySelector('.sidenav'));
+        let side = document.querySelector('.sidenav')
+        // side.style.background = "red";
+        //init carousel slider
+        let option = { fullWidth: true, indicators: true, };
+        let slider = M.Carousel.init(document.querySelector('.carousel'), option);
+        //auto init slider
+        function invokeslide() {
+            slider.next()
+        };
+        setInterval(invokeslide, 4000)
+
+        //nav bar motion
+        let header = document.querySelector('.header');
+        window.addEventListener('scroll', function () {
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+</body>
+
+</html>

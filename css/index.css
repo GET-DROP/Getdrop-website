@@ -1,0 +1,257 @@
+@import url(./materialize.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+.themecolor1 {
+    background-color: #1f2223;
+    padding-bottom: 10%;
+}
+
+div.nav-wrapper.themecolor1 {
+    padding-bottom: 0.2rem;
+}
+
+.themecolor2 {
+    color: rgb(181, 3, 3);
+}
+
+.themecolor3 {
+    background-color: rgb(181, 3, 3);
+}
+
+h2.themecolor2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: "bebas-neue", sans-serif;
+}
+
+.themefont {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 250;
+    letter-spacing: 2;
+}
+
+h1.themefont {
+    margin-top: 20vh;
+    font-weight: 700;
+    font-size: 8rem;
+    ;
+}
+
+h1.themefont i {
+    font-size: 95%;
+}
+
+@media only screen and (max-width: 600px) {
+    h1.themefont {
+        margin-top: 5vh;
+        font-size: 4rem;
+    }
+
+    h2.themecolor2 {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-family: "poppins", sans-serif;
+    }
+
+    div.container.themecolor3 {
+        /* margin-top: 5%;
+         margin-bottom: 5%; */
+        color: rgb(255, 255, 255);
+        position: relative !important;
+        display: block;
+
+    }
+
+    .extratext {
+
+        padding: 20px;
+    }
+
+    div.container.themecolor3 div img {
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 0px;
+        object-fit: contain;
+        border-style: solid;
+        width: 80%;
+        /* margin: 20px;
+        position: relative;
+    } */
+    }
+}
+
+a.brand-logo {
+    margin-right: 6vw;
+}
+
+div.nav-wrapper {
+    max-height: 10vh;
+}
+
+.themebutton {
+    margin-top: 5vh;
+    border-radius: 5px;
+}
+
+button.hoverable:hover {
+    width: 8.5vw;
+    height: 6vh;
+    transition: 0.5s;
+}
+
+nav {
+    background-color: #1f2223;
+    box-shadow: none;
+}
+
+#headbox {
+    width: 100%;
+    margin: 0%;
+    max-width: 100%;
+    box-shadow: none;
+}
+
+.containerpadding {
+    padding-top: 10vh;
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.heightandoverflow {
+    max-height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#slideimages {
+    display: flex;
+    position: relative;
+    transition: 0.6s;
+}
+
+#slidecontainer {
+    min-height: 500px;
+}
+
+.card-image {
+    max-width: max-content !important;
+}
+
+#caption {
+    position: absolute;
+    top: 20vh;
+    text-align: left;
+    /* line-height: 2vh; */
+    margin-left: 14px;
+
+}
+
+div.carousel div.divider {
+    width: 50%;
+    background-color: rgb(181, 3, 3);
+}
+
+div.card-content a {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0;
+}
+
+div.card span h2 {
+    font-family: 'poppins', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    transition: 0.6s;
+    z-index: 10000;
+
+}
+
+.header.sticky {
+    padding: 5px 70px;
+    height: 10vh;
+    width: 100vw;
+    background-color: #1f2223;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    overflow: hidden;
+}
+
+/* defining the fade animation  */
+@keyframes fade {
+    10% {
+        opacity: 20%;
+    }
+
+    20% {
+        opacity: 100%;
+    }
+
+    30% {
+        opacity: 50%;
+    }
+
+    40% {
+        opacity: 20%;
+    }
+
+    50% {
+        opacity: 80%;
+    }
+
+    60% {
+        opacity: 100%;
+    }
+
+    70% {
+        opacity: 10%;
+    }
+
+    80% {
+        opacity: 5%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+div.container.themecolor3 {
+    /* margin-top: 5%;
+     margin-bottom: 5%; 
+    color: white;
+    display: flex;
+    justify-content: center;*/
+    box-shadow: 5px 5px 5px #1f2223 !important;
+}
+
+div.container.themecolor3 div img {
+    border-radius: 1.5%;
+    /* border-style: solid;
+    border-color: white; */
+    margin: 20px;
+    position: relative;
+}
+
+.extratext {
+    color: white;
+}
